@@ -1,0 +1,9 @@
+#text{
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 40px;
+    border: 10px black solid;
+    background-color: darkgray;
+    padding: 20px
+}
