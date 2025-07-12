@@ -1,0 +1,38 @@
+{
+  "name": "ts1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.ts",
+    "sass": "sass public/scss/main.scss public/css/main.css --watch",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.9.0",
+    "bcryptjs": "^3.0.2",
+    "bootstrap-icons": "^1.13.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.5.0",
+    "envalid": "^8.0.0",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "express-session": "^1.18.1",
+    "lorem-ipsum": "^2.0.8",
+    "sass": "^1.89.1",
+    "session": "^0.1.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/connect-flash": "^0.0.40",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express-session": "^1.18.2",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.9.0"
+  }
+}

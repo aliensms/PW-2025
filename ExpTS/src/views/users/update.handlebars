@@ -1,0 +1,55 @@
+<h3>Atualizar Perfil</h3>
+<hr>
+
+{{! Form to update user credentials (name, email, major) }}
+<form action="/users/profile/update" method="POST" class="mb-5">
+    <h4>Dados do Perfil</h4>
+    {{#if errors.general}}
+        <div class="alert alert-danger">{{errors.general}}</div>
+    {{/if}}
+    <div class="mb-3">
+        <label for="name" class="form-label">Nome</label>
+        <input 
+            value="{{user.name}}"
+            type="text" 
+            id="name" 
+            name="name" 
+            class="form-control" 
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input 
+            type="email" 
+            value="{{user.email}}"
+            id="email" 
+            name="email" 
+            class="form-control" 
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="majorId">Curso</label>
+        <select id="majorId" name="majorId" class="form-select" required>
+            {{#each majors}}
+                <option value="{{this.id}}" {{#if this.selected}}selected{{/if}}>{{this.name}} ({{this.code}})</option>
+            {{/each}}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Atualizar Dados</button>
+</form>
+
+{{! Form to change password }}
+<form action="/users/profile/password" method="POST">
+    <h4>Alterar Senha</h4>
+    <div class="mb-3">
+        <label for="currentPassword" class="form-label">Senha Atual</label>
+        <input 
+            type="password" 
+            id="currentPassword" 
+            name="currentPassword" 
+            class="form-control {{#if errors.currentPassword}}is-invalid{{/if}}"
+            required>
+        {{#if errors.currentPassword}}<div class="invalid-feedback">{{errors.currentPassword}}</div>{{/if}}
+    </div>
+    <div class="mb-3">
+        <label for="newPassword

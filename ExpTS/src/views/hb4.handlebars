@@ -1,0 +1,11 @@
+
+    <div class="container">
+    <p>Technologias baseadas no NodeJS:</p>
+    <ul>
+        {{#each technologies}}
+        {{#if poweredByNodejs}}
+        <li>{{name}} - {{type}}</li>
+        {{/if}}
+        {{/each}}
+    </ul>
+    </div>

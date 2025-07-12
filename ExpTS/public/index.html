@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="hud">
+        <div id="vidas-container"></div>
+        <span id="pontos">Pontos: 0</span>
+    </div>
+
+    <div id="game-over-screen" class="game-overlay">
+      <div class="overlay-content">
+        <h1>game over</h1>
+        <div id="pontuacao-final"></div>
+        <div class="game-over-actions">
+          <button id="restart-btn" class="btn btn-primary">play again?</button><br>
+          <a href="/ranking" class="btn btn-secondary">ranking</a><br>
+          <a href="/" class="btn btn-secondary">homepage</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="pause-screen" style="display: block;">
+      <div style="color: rgb(253, 5, 191);">INSTRUÇÕES</div>
+      <p style="font-size: medium; color:blueviolet">
+        <strong>
+          Use as setas para se movimentar (Direita e Esquerda)<br>
+          Use o Espaço para atirar<br>
+          Pressione P para começar o jogo<br>
+          Use o R para reiniciar o jogo<br>
+        </strong>
+        <br>
+  
+      </p>
+    </div>
+
+    <div id="start-screen" style="display: block;">
+      <div style="color: rgb(253, 5, 191);">INSTRUÇÕES</div>
+      <p style="font-size: medium; color:blueviolet">
+        <strong>
+          Use as setas para se movimentar (Direita e Esquerda)<br>
+          Use o Espaço para atirar<br>
+          Pressione P para começar o jogo<br>
+          Use o R para reiniciar o jogo<br>
+        </strong>
+        <br>
+        <strong>Aperte Espaço pra começar</strong>
+      </p>
+    </div>
+
+
+    <div id="space"></div>
+    <script type="module" src="js/game.js"></script>
+  </body>
+</html>

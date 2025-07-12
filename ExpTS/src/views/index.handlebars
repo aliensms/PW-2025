@@ -1,0 +1,11 @@
+<div class="hero-section text-center">
+    <h1 class="display-4">Space shooter game</h1>
+    <p class="lead">Você tem o necessário para subir no ranking?</p>
+    {{#if logado}}
+        <a class="btn btn-primary btn-lg" href="/game" role="button">start game<i class="bi bi-stars"></i></a>
+    {{else}}
+        <div class="alert alert-light mt-4" role="alert" style="background-color: rgba(255,255,255,0.5); border: none;">
+            <a href="/users/login" class="alert-link sabrina-link">log in</a> or <a href="/users/create" class="alert-link sabrina-link">sign up</a> to play.
+        </div>
+    {{/if}}
+</div>

@@ -1,0 +1,330 @@
+/* Estilo Sabrina Carpenter - by Gemini */
+
+:root {
+    --primary-pink: #ff85a2;
+    --secondary-pink: #ffb3c6;
+    --light-pink: #ffe0e9;
+    --dark-purple: #6D2A4E;
+    --text-color: #5c5c5c;
+    --bs-primary-rgb: 255, 133, 162; /* For Bootstrap components */
+}
+
+body.sabrina-theme {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-pink);
+    color: var(--text-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffb3c6' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-purple);
+    font-weight: 700;
+}
+
+.navbar-custom {
+    background-color: var(--primary-pink);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-brand {
+    font-family: 'Poppins', cursive;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar-custom .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #fff;
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid var(--secondary-pink);
+}
+
+.navbar-custom .dropdown-item:hover {
+    background-color: var(--light-pink);
+    color: var(--dark-purple);
+}
+
+a {
+    color: var(--primary-pink);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-purple);
+}
+
+.btn-primary {
+    background-color: var(--primary-pink);
+    border-color: var(--primary-pink);
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e86b8c;
+    border-color: #e86b8c;
+}
+
+.table {
+    --bs-table-bg: #fff;
+    --bs-table-striped-bg: #fff5f7;
+    --bs-table-hover-bg: var(--light-pink);
+    border-color: var(--secondary-pink);
+}
+
+.table-dark {
+    --bs-table-bg: var(--dark-purple);
+    --bs-table-border-color: var(--primary-pink);
+    color: #fff;
+}
+
+.icon-pink {
+    color: var(--primary-pink);
+}
+
+/* Homepage Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%);
+    box-shadow: 0 8px 32px 0 rgba(109, 42, 78, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section .display-4 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn-lg {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: var(--primary-pink);
+    border: 2px solid #fff;
+}
+
+.hero-section .btn-lg:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--dark-purple);
+    color: #fff;
+    border-color: var(--dark-purple);
+}
+
+.alert-link.sabrina-link {
+    color: var(--dark-purple);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-pink);
+}
+
+.alert-link.sabrina-link:hover {
+    color: var(--primary-pink);
+}
+
+/* About Page Styles */
+.about-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--secondary-pink);
+}
+
+.about-container .display-5 {
+    color: var(--dark-purple);
+    font-weight: 700;
+}
+
+.about-container .lead {
+    color: var(--primary-pink);
+}
+
+.game-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.controls-list .list-group-item {
+    background-color: transparent;
+    border-color: var(--secondary-pink);
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.controls-list .badge {
+    background-color: var(--dark-purple) !important;
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+}
+
+/* Game Specific Styles */
+body.sabrina-theme {
+    /* Ensure the game container is positioned correctly */
+    position: relative;
+    overflow: hidden; /* Hide scrollbars for the game */
+}
+
+#space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+#vidas-container {
+    display: flex;
+    gap: 5px;
+}
+
+#vidas-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(109, 42, 78, 0.8); /* dark-purple with transparency */
+    backdrop-filter: blur(10px);
+    display: none; /* Hidden by default, controlled by JS */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    z-index: 200;
+}
+
+/* JS will set display to flex/block, but start screen is visible on load */
+#start-screen {
+    display: flex;
+}
+
+.overlay-content {
+    max-width: 500px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.overlay-content h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+.overlay-content p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+.overlay-content .instructions {
+    margin: 2rem 0;
+    background: rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.overlay-content .instructions p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.overlay-content .instructions strong {
+    color: var(--secondary-pink);
+    padding: 0.2em 0.4em;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.overlay-content .start-prompt {
+    font-style: italic;
+    animation: pulse 2s infinite;
+}
+
+#pontuacao-final {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-pink);
+    margin-bottom: 2rem;
+}
+
+.overlay-content .btn {
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+}
+
+.btn-secondary {
+    background-color: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.3);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255,255,255,0.4);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.game-over-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
